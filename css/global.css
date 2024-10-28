@@ -1,0 +1,162 @@
+* {
+    font-size: 20px;
+    font-family: "Merriweather", "Georgia", serif;
+    box-sizing: border-box
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.quebra{
+    margin-bottom: 10px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    background-color: transparent;
+    padding: 3px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.link:hover{
+    background-color: black;
+    color: #ffff;
+    opacity: 0.8;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+aside {
+    padding: 38px;
+    background-color: rgb(176, 213, 252);
+    display: flex;
+    justify-content: center;
+    width: 150%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+nav{
+    background-color: rgb(176, 213, 252);
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 12px;
+    padding: 20px 20px;
+    gap: 10px;
+}
+
+main nav ul li .link{
+    color: #ffff;
+}
+
+main {
+    margin: 0 100px 0 100px;
+}
+
+.secao {
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 15px 30px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: #ffff;
+    opacity: 0.8;
+}
+
+.titulo-bloco {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 4px double #ffff;
+}
+
+.titulo-span{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.subtitulo-span {
+    margin-right: 10px; 
+    font-size: 22px;
+    font-weight: bold; 
+}
+
+.titulo-bloco .seta {
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.conteudo-bloco {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    text-align: justify;
+}
+
+.conteudo-bloco.show {
+    max-height: 500px; 
+}
+
+.seta.ativa {
+    transform: rotate(180deg); 
+}
+
+@media (max-width: 1024px) {
+    aside, main {
+        width: 100%;
+        margin: 0;
+    }
+    body {
+        flex-direction: column;
+    }
+    aside {
+        padding: 20px;
+    }
+    main {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo-span {
+        font-size: 22px;
+    }
+    .titulo-bloco .seta {
+        font-size: 16px;
+    }
+    .secao {
+        padding: 10px 20px;
+    }
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-span {
+        font-size: 18px;
+    }
+    .link {
+        font-size: 14px;
+    }
+    nav {
+        padding: 10px;
+    }
+}

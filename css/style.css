@@ -1,0 +1,59 @@
+.cabecalho{
+    margin: 12px 0 12px 0;
+}
+
+.cabecalho ul{
+    padding: 0 12px 0 12px;
+    list-style: none;
+}
+
+.nome-span{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cargo-span{
+    font-size: 20px;
+}
+
+.secao-info{
+    width: 130%;
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.foto img {
+    border-radius: 100%;;
+    max-width: 75%;
+    height: auto; 
+}
+
+.lista-info ul, .lista-competencia ul, .lista-redes ul{
+    padding: 0;
+    list-style-type: none; 
+}
+
+.secao-competencia, .secao-redes {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 0 0 12px 0;
+}
+
+.lista-competencia ul, .lista-redes ul{
+    margin: 0;
+}
+
+.lista-redes ul{
+    display: flex;
+    gap: 10px;
+}
+
+.lista-redes ul li a{
+    font-size: 40px;
+    color: black;
+}
