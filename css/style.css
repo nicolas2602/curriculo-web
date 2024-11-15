@@ -8,12 +8,12 @@
 }
 
 .nome-span{
-    font-size: 28px;
+    font-size: 21px;
     font-weight: bold;
 }
 
 .cargo-span{
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .secao-info{
@@ -62,4 +62,42 @@
     text-decoration: none;
     color: black;
     font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+    .nome-span{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .cargo-span{
+        font-size: 24px;
+    }
+
+    .foto img {
+        border-radius: 100%;;
+        max-width: 50%;
+        height: auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    .foto img {
+        border-radius: 100%;;
+        max-width: 70%;
+        height: auto; 
+    }
+
+    .nome-span{
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    .cargo-span{
+        font-size: 18px;
+    }
+
+    .info{
+        overflow-x: hidden;
+    }
 }

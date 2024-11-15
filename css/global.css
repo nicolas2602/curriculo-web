@@ -1,7 +1,14 @@
 * {
     font-size: 20px;
     font-family: "Merriweather", "Georgia", serif;
-    box-sizing: border-box
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .borda {
@@ -162,6 +169,15 @@ main {
 }
 
 @media (max-width: 480px) {
+    * {
+        overflow-y: auto;
+        overflow-x: none;
+    }
+
+    *::-webkit-scrollbar{
+        display: none;
+    }
+
     .titulo-span {
         font-size: 18px;
     }
@@ -169,8 +185,49 @@ main {
     .link {
         font-size: 14px;
     }
-    
+
+    body{
+        overflow: hidden;
+    }
+
     nav {
         padding: 10px;
+    }
+}
+
+@media (min-width: 1025px) {
+    aside {
+        padding: 40px;
+        width: 30%; 
+        padding-bottom: 147px;
+    }
+}
+
+@media (min-width: 1310px) {
+    body {
+        flex-direction: row; 
+    }
+
+    aside {
+        padding: 40px;
+        width: 30%; 
+        padding-bottom: 116px;
+    }
+
+    main {
+        width: 60%; 
+        padding: 20px;
+    }
+
+    .secao {
+        padding: 20px 40px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    .titulo-span {
+        font-size: 28px;
     }
 }
