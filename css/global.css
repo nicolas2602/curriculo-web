@@ -155,7 +155,7 @@ main {
     }
 
     .secao .conteudo-bloco ul {
-        list-style: circle;
+        list-style: disc;
     }
 }
 
