@@ -153,6 +153,10 @@ main {
     main {
         padding: 0 20px;
     }
+
+    nav {
+        list-style: circle;
+    }
 }
 
 @media (max-width: 768px) {
@@ -171,6 +175,7 @@ main {
     nav {
         flex-direction: column;
         gap: 5px;
+        list-style: circle;
     }
 }
 
@@ -198,6 +203,7 @@ main {
 
     nav {
         padding: 10px;
+        list-style: circle;
     }
 }
 
@@ -224,6 +230,7 @@ main {
 
     nav {
         gap: 20px;
+        list-style: circle;
     }
 
     .titulo-span {
