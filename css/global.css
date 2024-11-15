@@ -196,26 +196,19 @@ main {
 }
 
 @media (min-width: 1025px) {
-    aside {
-        padding: 40px;
-        width: 30%; 
-        padding-bottom: 147px;
-    }
-}
-
-@media (min-width: 1310px) {
     body {
         flex-direction: row; 
     }
 
     aside {
         padding: 40px;
-        width: 30%; 
-        padding-bottom: 116px;
+        width: 30%;
+        padding-bottom: calc(100vh - 700px);
+        box-sizing: border-box;
     }
 
     main {
-        width: 60%; 
+        width: 60%;
         padding: 20px;
     }
 
