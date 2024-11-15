@@ -46,6 +46,11 @@ body {
     padding: 0;
 }
 
+body, .secao, ul, li, p, span {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
 aside {
     padding: 38px;
     background-color: rgb(176, 213, 252);
@@ -118,12 +123,13 @@ main {
 .conteudo-bloco {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease;
+    transition: max-height 0.5s ease-in-out; 
     text-align: justify;
 }
 
 .conteudo-bloco.show {
-    max-height: 500px; 
+    max-height: 1000px; 
+    overflow: auto; 
 }
 
 .seta.ativa {
