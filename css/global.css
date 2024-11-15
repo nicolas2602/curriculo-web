@@ -176,10 +176,6 @@ main {
         list-style: disc;
     }
 
-    .secao .conteudo-bloco ul li p ul{
-        list-style: circle;
-    }
-
     nav {
         flex-direction: column;
         gap: 5px;
@@ -213,7 +209,7 @@ main {
     }
 
     .secao .conteudo-bloco ul {
-        list-style: circle;
+        list-style: disc;
     }
 }
 
@@ -247,6 +243,6 @@ main {
     }
 
     .secao .conteudo-bloco ul {
-        list-style: circle;
+        list-style: disc;
     }
 }
