@@ -154,7 +154,7 @@ main {
         padding: 0 20px;
     }
 
-    nav {
+    .secao .conteudo-bloco ul {
         list-style: circle;
     }
 }
@@ -172,10 +172,17 @@ main {
         padding: 10px 20px;
     }
 
+    .secao .conteudo-bloco ul {
+        list-style: disc;
+    }
+
+    .secao .conteudo-bloco ul li p ul{
+        list-style: circle;
+    }
+
     nav {
         flex-direction: column;
         gap: 5px;
-        list-style: circle;
     }
 }
 
@@ -203,6 +210,9 @@ main {
 
     nav {
         padding: 10px;
+    }
+
+    .secao .conteudo-bloco ul {
         list-style: circle;
     }
 }
@@ -230,10 +240,13 @@ main {
 
     nav {
         gap: 20px;
-        list-style: circle;
     }
 
     .titulo-span {
         font-size: 28px;
+    }
+
+    .secao .conteudo-bloco ul {
+        list-style: circle;
     }
 }
