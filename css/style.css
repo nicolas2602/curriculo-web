@@ -81,7 +81,7 @@
 
     .foto img {
         border-radius: 100%;;
-        max-width: 50%;
+        max-width: 40%;
         height: auto; 
     }
 }
@@ -89,7 +89,7 @@
 @media (max-width: 480px) {
     .foto img {
         border-radius: 100%;;
-        max-width: 70%;
+        max-width: 60%;
         height: auto; 
     }
 
